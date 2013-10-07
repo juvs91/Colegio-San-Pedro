@@ -8,6 +8,116 @@
  * Designed and built with all the love in the world by @mdo and @fat.
  */
 
+.clear{
+  clear: both;
+}
+
+.clearWithHeight{
+  clear: both;
+  height: 100px;
+}
+
+#sliderMainContainer{
+  background: white;
+  height: 312px;
+}
+
+.principalContent{
+  height: auto;
+  border-top: 2px solid #C0BCBB;
+}
+
+.hrRed{
+  border-top: 1px solid #881111 !important;
+  border-bottom: 1px solid #D14F4F !important;
+
+}
+
+#principalContent .span8 button {
+  width: 165px !important;
+}
+
+#principalContent .span4{
+  margin-left: 0 !important;
+  border-left: 2px solid #C0BCBB;
+  float: right;
+}
+
+#principalContent .span4 .thumbnail{
+  margin: auto;
+  width: 265px;
+
+}
+
+#navMenu .container .navbar {
+  float: right !important;
+}
+
+.marginTop{
+  margin-top: 20px !important;
+}
+
+#navMenu.navMenu{
+  margin-top: 50px;
+}
+
+#headerContainer{
+  width: 800px;
+  margin: auto;
+}
+
+#logoContainer{
+  position: relative;
+  width: 109px;
+  height: 112px;
+  float: left;
+}
+
+#footerCont.navMenu{
+  height: auto !important;
+  bottom: 0;
+  
+}
+
+#footerCont .container{
+  color: #FFF !important;
+  font-size: 13px !important;
+}
+
+#footerCont .container .boldSpan{
+  color: #000 !important;
+  font-size: 14px !important;
+}
+
+.socialIcon{
+  width: 35px;
+  height: 35px;
+  float: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#facebookLogo.socialIcon{
+  background-image: url("/images/facebook.png");
+}
+
+#twitterLogo.socialIcon{
+  background-image: url("/images/twitter.png");
+  margin-left: 20px;
+}
+
+#logo{
+   background: url("/images/logo.png");
+    width: 108px;
+    height: 111px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    float: left;
+    bottom: 34px;
+}
+
+
 .clearfix {
   *zoom: 1;
 }
@@ -227,7 +337,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #E2DCDC;
 }
 
 a {
@@ -4369,16 +4479,17 @@ input[type="submit"].btn.btn-mini {
   overflow: visible;
 }
 
-.navbar-inner {
+.navMenu{
   min-height: 40px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #fafafa;
-  background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
-  background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
-  background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
-  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background-image: -moz-linear-gradient(top, #CF1212, #A01111);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#CF1212), to(#A01111));
+  background-image: -webkit-linear-gradient(top, #CF1212, #A01111);
+  background-image: -o-linear-gradient(top, #CF1212, #A01111);
+  background-image: linear-gradient(to bottom, #CF1212, #A01111);
+  height: 82px;
   background-repeat: repeat-x;
   border: 1px solid #d4d4d4;
   -webkit-border-radius: 4px;
@@ -4445,8 +4556,8 @@ input[type="submit"].btn.btn-mini {
 .navbar .divider-vertical {
   height: 40px;
   margin: 0 9px;
-  border-right: 1px solid #ffffff;
-  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #881111;
+  border-left: 1px solid #D14F4F;
 }
 
 .navbar .btn,
@@ -4598,7 +4709,7 @@ input[type="submit"].btn.btn-mini {
   left: 0;
   display: block;
   float: left;
-  margin: 0 10px 0 0;
+  margin-top: 19px;
 }
 
 .navbar .nav.pull-right {
@@ -4613,9 +4724,9 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > a {
   float: none;
   padding: 10px 15px 10px;
-  color: #777777;
+  color: #FFF;
   text-decoration: none;
-  text-shadow: 0 1px 0 #ffffff;
+  text-shadow: 0 1px 0 #252525;
 }
 
 .navbar .nav .dropdown-toggle .caret {
@@ -4624,17 +4735,18 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  color: #333333;
+  color: #E9E9E9;
   text-decoration: none;
   background-color: transparent;
 }
 
 .navbar .nav > .active > a,
+.navbar .nav > li > a:hover,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
-  color: #555555;
+  color: #FFF;
   text-decoration: none;
-  background-color: #e5e5e5;
+  background-color: #9E1313;
   -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
      -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
