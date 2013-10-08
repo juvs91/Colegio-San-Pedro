@@ -1,15 +1,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml"> 
     <head> 
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> 
-        <meta property="og:title" content="Colegio San Pedro" />  
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <link rel="Shortcut Icon" type="image/x-icon" href="../en/icono.jpg">
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> 
+      <meta property="og:title" content="Colegio San Pedro" />  
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+      <link rel="Shortcut Icon" type="image/x-icon" href="../en/icono.jpg">
       <title>Colegio San Pedro</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="css/bootstrap.css" rel="stylesheet" media="screen">
       <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
-      <script src="http://code.jquery.com/jquery.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+      <!-- bxSlider Javascript file -->
+      <script src="js/jquery.bxslider.min.js"></script>
+      <!-- bxSlider CSS file -->
+      <link href="css/jquery.bxslider.css" rel="stylesheet" />
       <script src="js/bootstrap.min.js"></script>
   </head>
   
@@ -25,20 +29,21 @@
           
         <div class="navbar">
           <div class="navbar-inner">
-            <ul class="nav">
-              <li><a href="#">Inicio</a></li>
-              <li class="divider-vertical"></li>
-              <li><a href="#">Acerca</a></li>
-              <li class="divider-vertical"></li>
-              <li><a href="#">Oferta Educativa</a></li>
-              <li class="divider-vertical"></li>
-              <li><a href="#">Galeria</a></li>
-              <li class="divider-vertical"></li>
-              <li><a href="#">Admisiones</a></li>
-              <li class="divider-vertical"></li>
-              <li><a href="#">Contacto</a></li>
-              <li class="divider-vertical"></li>
-            </ul>
+              <ul class="nav visible-desktop">
+                <li><a href="#">Inicio</a></li>
+                <li class="divider-vertical"></li>
+                <li><a href="#">Acerca</a></li>
+                <li class="divider-vertical"></li>
+                <li><a href="#">Oferta Educativa</a></li>
+                <li class="divider-vertical"></li>
+                <li><a href="#">Galeria</a></li>
+                <li class="divider-vertical"></li>
+                <li><a href="#">Admisiones</a></li>
+                <li class="divider-vertical"></li>
+                <li><a href="#">Contacto</a></li>
+                <li class="divider-vertical"></li>
+              </ul>
+              
           </div>
         </div>  
       </div>
@@ -49,10 +54,30 @@
 
 <!-- SLIDER CONTENT -->
     <div id="sliderMainContainer">
-      <div class="container">
-         
+      <div class="container" style="width:100%;max-width: 930px;">
+        <ul class="bxslider">
+          <li><img src="/images/foto1.png" title="Ven y Conocenos!" /></li>
+          <li><img src="/images/foto2.png" title="La mejor opci&oacute;n para tus hijos!" /></li>
+          <li><img src="/images/foto3.png" title="Preparamos a tu hijo para un futuro exitoso!" /></li>
+        </ul>
+                 
       </div>
     </div>
+
+
+  
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.bxslider').bxSlider({
+          mode: 'fade',
+          captions: true,
+          pager: false,
+          infiniteLoop: true,
+          randomStart:true
+        });
+      });
+
+    </script>
 <!-- TERMINA SLIDER CONTENT -->
 
 

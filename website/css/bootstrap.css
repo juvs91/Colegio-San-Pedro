@@ -8,6 +8,16 @@
  * Designed and built with all the love in the world by @mdo and @fat.
  */
 
+
+ @media (max-width: 767px) {
+
+  #principalContent .span4{
+    border-top: 2px solid #C0BCBB;
+    border-left: 0 !important;
+  }
+
+ }
+
 .clear{
   clear: both;
 }
@@ -19,7 +29,14 @@
 
 #sliderMainContainer{
   background: white;
-  height: 312px;
+}
+
+#sliderMainContainer .container ul.bxslider{
+  margin: 0 0 10px 0 !important;
+}
+
+#sliderMainContainer .container .bx-viewport{
+  overflow: inherit !important;
 }
 
 .principalContent{
