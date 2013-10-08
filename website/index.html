@@ -18,6 +18,15 @@
   </head>
   
   <body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=261704890537050";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   
     
 <!-- HEADER -->
@@ -111,6 +120,12 @@
             <input type="submit" value="&#161;Suscribir Ahora!" class="btn btn-large">
           </form>
         </div>
+
+        <div id="facebookContainer" class="thumbnail marginTop center well well-small text-center">
+
+          <div class="fb-like-box" data-href="http://www.facebook.com/saitc.mty" data-width="265" data-height="The pixel height of the plugin" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="true"></div>
+        </div>
+
         <div class="clearWithHeight"></div>
 
       </div>
@@ -138,6 +153,11 @@
 
 
 <!-- FOOTER -->
+
+  <div class="container">
+    <div id="upBtn"></div>
+  </div>
+
     <div id="footerCont" class="navMenu">
       <div class="container"> 
         <div class="row-fluid">
@@ -185,5 +205,15 @@
   </body>
 </html>
 
+
+<script type="text/javascript">
+    $(document).ready(function(){  
+        $('#upBtn').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+ 
+    });
+</script>
 
         

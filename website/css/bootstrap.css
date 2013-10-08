@@ -18,6 +18,16 @@
 
  }
 
+#upBtn {
+  background: url("/images/up.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 41px;
+  height: 20px;
+  float: right;
+  cursor: pointer;
+}
+
 .clear{
   clear: both;
 }
