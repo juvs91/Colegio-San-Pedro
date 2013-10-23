@@ -1,3 +1,14 @@
+<?php
+/* Get the actual page */
+  if (isset($_REQUEST['page']) && ( 
+            $_REQUEST['page'] == 'acerca' || $_REQUEST['page'] == 'oferta' || $_REQUEST['page'] == 'admisiones' || $_REQUEST['page'] == 'galeria' || $_REQUEST['page'] == 'contacto' 
+            )) { 
+            $page = $_REQUEST['page']; 
+  }else{
+    $page = 'inicio';
+  }
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml"> 
     <head> 
@@ -10,6 +21,8 @@
       <link href="css/bootstrap.css" rel="stylesheet" media="screen">
       <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+      <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+      <link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
       <!-- bxSlider Javascript file -->
       <script src="js/jquery.bxslider.min.js"></script>
       <!-- bxSlider CSS file -->
@@ -33,23 +46,23 @@
     <div id="navMenu" class="navMenu">
       <div class="container">
         <div id="logoContainer">
-         <div id="logo"></div>
+         <a href="index.php?page=inicio"><div id="logo"></div></a>
         </div>
           
         <div class="navbar">
           <div class="navbar-inner">
               <ul class="nav visible-desktop">
-                <li><a href="#">Inicio</a></li>
+                <li><a href="index.php?page=inicio">Inicio</a></li>
                 <li class="divider-vertical"></li>
-                <li><a href="#">Acerca</a></li>
+                <li><a href="index.php?page=acerca">Acerca</a></li>
                 <li class="divider-vertical"></li>
-                <li><a href="#">Oferta Educativa</a></li>
+                <li><a href="index.php?page=oferta">Oferta Educativa</a></li>
                 <li class="divider-vertical"></li>
-                <li><a href="#">Galeria</a></li>
+                <li><a href="index.php?page=galeria">Galeria</a></li>
                 <li class="divider-vertical"></li>
-                <li><a href="#">Admisiones</a></li>
+                <li><a href="index.php?page=admisiones">Admisiones</a></li>
                 <li class="divider-vertical"></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="index.php?page=contacto">Contacto</a></li>
                 <li class="divider-vertical"></li>
               </ul>
               
@@ -59,97 +72,12 @@
     </div>
 
 <!-- TERMINA HEADER -->
-    
-
-<!-- SLIDER CONTENT -->
-    <div id="sliderMainContainer">
-      <div class="container" style="width:100%;max-width: 930px;">
-        <ul class="bxslider">
-          <li><img src="/images/foto1.png" title="Ven y Conocenos!" /></li>
-          <li><img src="/images/foto2.png" title="La mejor opci&oacute;n para tus hijos!" /></li>
-          <li><img src="/images/foto3.png" title="Preparamos a tu hijo para un futuro exitoso!" /></li>
-        </ul>
-                 
-      </div>
-    </div>
-
-
-  
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('.bxslider').bxSlider({
-          mode: 'fade',
-          captions: true,
-          pager: false,
-          infiniteLoop: true,
-          randomStart:true
-        });
-      });
-
-    </script>
-<!-- TERMINA SLIDER CONTENT -->
-
-
-<!-- PRINCIPAL CONTENT -->
-
-<div id="principalContent" class="principalContent">
-  <div class="container">
-    <div class="row-fluid">
-      <div class="span8">
-        <h3 class="marginTop"> Nuestros niveles educativos</h3>
-        <button class="btn btn-large btn-warning" type="button">Kinder</button>
-        <button class="btn btn-large btn-success" type="button">Primaria</button>
-        <button class="btn btn-large btn-info" type="button">Secundaria</button>
-    
-        <h3  style="margin-top: 40px;"> Ultimas Noticias</h3>
-      
-
-      </div>
-
-      <div class="span4">
-        <div class="thumbnail marginTop center well well-small text-center">
-          <h2>&#161;Suscribete!</h2>
-            
-          <p>Suscribete para recibir nuestros avisos de manera inmediata</p>
-            
-          <form action="" method="post">
-            <div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span>
-                <input type="text" id="" name="" placeholder="correo@email.com">
-            </div>
-            <br>
-            <input type="submit" value="&#161;Suscribir Ahora!" class="btn btn-large">
-          </form>
-        </div>
-
-        <div id="facebookContainer" class="thumbnail marginTop center well well-small text-center">
-
-          <div class="fb-like-box" data-href="http://www.facebook.com/saitc.mty" data-width="265" data-height="The pixel height of the plugin" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="true"></div>
-        </div>
-
-        <div class="clearWithHeight"></div>
-
-      </div>
-      
-    </div>
-
-
-  </div>
   
 
-</div>
+<?php   
+  include($page.'.php');
 
-<!-- TERMINA PRINCIPAL CONTENT -->
-
-
-
-    
-
-    
-
-
-    <div class="container">
-     
-    </div>
+?>
 
 
 <!-- FOOTER -->
@@ -163,18 +91,18 @@
         <div class="row-fluid">
           <div class="span8">
             <div class="span6 marginTop">
-              <p class="boldSpan"> Direcci&oacute;n </p>
+              <h5 class="boldSpan"> Direcci&oacute;n </h5>
               <p> Ave. Garza Sada 129 Col. Tecnologico</p>
               <p> Monterrey, Nuevo Le&oacute;n, M&eacute;xico </p>
             </div>
 
             <div class="span3 marginTop" >
-              <p class="boldSpan"> Tel&eacute;fonos </p>
+              <h5 class="boldSpan"> Tel&eacute;fonos </h5>
               <p> (81)- 81234567</p>
               <p> (81)- 81234567</p>
             </div>
             <div class="span3 marginTop">
-              <p class="boldSpan">Fax</p>
+              <h5 class="boldSpan">Fax</h5>
               <p> (81)- 81234567</p>
             </div>
           </div>

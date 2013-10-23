@@ -18,6 +18,83 @@
 
  }
 
+
+.marginBottom{
+  margin-bottom: 100px;
+}
+
+#instalacionesContent .span4 p, #galeriaContent .span4 p{
+  margin-top: 15px;
+}
+
+#instalacionesContent .span4, #galeriaContent .span4 {
+  text-align: center;
+}
+
+.aboutParr{
+  padding: 10px 0;
+  margin-left: 0 !important;
+}
+
+.aboutTitlesCont h4{
+  font-weight: normal !important;
+}
+
+.aboutTitlesCont {
+  padding: 2px 15px;
+  -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px; 
+  border-radius: 4px;
+
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #E27F32;
+  *background-color: #DA6306;
+  background-image: -moz-linear-gradient(top, #E27F32, #DA6306);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#E27F32), to(#DA6306));
+  background-image: -webkit-linear-gradient(top, #E27F32, #DA6306);
+  background-image: -o-linear-gradient(top, #E27F32, #DA6306);
+  background-image: linear-gradient(to bottom, #E27F32, #DA6306);
+  background-repeat: repeat-x;
+  border-color: #DA6306 #DA6306 #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.acercaContent img, #instalacionesContent .span4 img, #galeriaContent .span4 img{
+  max-width: 254px;
+  width: 100%;
+  max-height: 152px;
+  height: 100%;
+  opacity: 0.9;
+
+
+
+ }
+
+.zoomEffect img, #logo{
+  cursor: pointer;
+
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+#logo:hover, .zoomEffect img:hover, .zoomEffect img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1) translateZ(0);
+  -moz-transform: scale(1.1) translateZ(0);
+  -o-transform: scale(1.1) translateZ(0);
+  transform: scale(1.1) translateZ(0);
+}
+
+
 #upBtn {
   background: url("/images/up.png");
   background-size: contain;
@@ -37,7 +114,7 @@
   height: 100px;
 }
 
-#sliderMainContainer{
+#sliderMainContainer, .whiteBackground{
   background: white;
 }
 
@@ -98,6 +175,7 @@
   width: 109px;
   height: 112px;
   float: left;
+
 }
 
 #footerCont.navMenu{
