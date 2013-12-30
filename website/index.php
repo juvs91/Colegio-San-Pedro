@@ -29,15 +29,6 @@
   
   <body>
 
-    
-<!-- ALERTA -->
-<div class="alert alert-warning alert-dismissable">
-  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-
-  <h4>P&aacute;gina en construcci&oacute;n</h4>
-  <h4>Nota: Solo es un demo</h4>
-
-</div>
 
 <!-- HEADER -->
     <div id="navMenu" class="navMenu">
