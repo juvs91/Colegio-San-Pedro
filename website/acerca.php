@@ -1,19 +1,22 @@
 
-<!-- UP CONTENT -->
+
     <div class="whiteBackground">
-      <div class="container ">
+      <div class="container clearProp ">
         <div class="row-fluid ">
           <div class="span12">
-            <h3 class="marginTop"> Acerca de Nosotros</h3>
+            <h2 class="marginTop"> Acerca de Nosotros</h2>
           </div>
 
-          <!-- Bloque de Mision -->
+          <!-- BLOQUE DE MISION -->
+
           <div class="row-fluid acercaContent zoomEffect">
             
+            <!-- IMAGEN MISION -->
             <div class="span4"> 
               <img  class="img-polaroid img-rounded" src="images/f1.png" />
             </div>
             
+            <!-- DESCRIPCION DE MISION -->
             <div class="span8">
               
               <div class="aboutTitlesCont">
@@ -32,14 +35,16 @@
 
           </div>
 
-          <!-- Bloque de Vision -->
+          <!-- BLOQUE DE VISION -->
 
-           <div class="row-fluid acercaContent marginTop">
+           <div class="row-fluid acercaContent marginTop zoomEffect">
             
+            <!-- IMAGEN VISION -->
             <div class="span4"> 
               <img class="img-polaroid img-rounded" src="images/f2.png" />
             </div>
             
+            <!-- DESCRIPCION DE VISION -->
             <div class="span8">
               
               <div class="aboutTitlesCont">
@@ -74,7 +79,7 @@
 <!-- INSTALACIONES CONTENT -->
 
 <div id="instalacionesContent" class="principalContent zoomEffect">
-  <div class="container ">
+  <div class="container clearProp">
     <div class="row-fluid">
       <div class="span12" >
         <h3 class="marginTop"> Instalaciones</h3>

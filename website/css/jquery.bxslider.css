@@ -196,3 +196,9 @@
 	font-size: 1.3em;
 	padding: 10px;
 }
+
+@media screen and (max-width: 550px) {
+	.bx-wrapper .bx-caption span {
+		font-size: 13px !important;
+	}
+}

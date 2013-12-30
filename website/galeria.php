@@ -4,7 +4,7 @@
       <div class="container ">
         <div class="row-fluid ">
           <div class="span12">
-            <h3 class="marginTop"> Galeria </h3>
+            <h2 class="marginTop"> Galeria </h2>
           </div>
 
         </div>
@@ -18,20 +18,7 @@
 
 <!-- INSTALACIONES CONTENT -->
 
-<script type="text/javascript">
 
-    $("document").ready(function() {
-
-       $("#galeriaContent .span4 img").mouseenter(function() {
-          $(this).find("img.img-polaroid").css("opacity","1.0");
-        }).mouseleave(function() {
-          $(this).find("img.img-polaroid").css("opacity","0.9");
-        });
-
-
-    });
-
-  </script>
 
 
 <div id="galeriaContent" class="principalContent zoomEffect">
@@ -104,4 +91,19 @@
   </div>
 </div>
 
-<!-- TERMINA INSTALACIONES CONTENT -->
+<!-- SCRIPT PARA DAR EFECTO A LAS IMAGENES-->
+
+<script type="text/javascript">
+
+    $("document").ready(function() {
+
+       $("#galeriaContent .span4 img").mouseenter(function() {
+          $(this).find("img.img-polaroid").css("opacity","1.0");
+        }).mouseleave(function() {
+          $(this).find("img.img-polaroid").css("opacity","0.9");
+        });
+
+
+    });
+
+  </script>
